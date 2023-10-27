@@ -1,0 +1,44 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+}
+
+.top {
+  height: 33.33%;
+  line-height: 33.33vh;
+}
+
+.middle {
+  background-color: aquamarine;
+  height: 33.33%;
+  text-align: center;
+  line-height: 33.33vh;
+}
+
+.bottom {
+  text-align: center;
+  height: 33.33%;
+  background-color: blue;
+  line-height: 33.33vh;
+}
+
+.left {
+  background-color: violet;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.right {
+  background-color: blue;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
