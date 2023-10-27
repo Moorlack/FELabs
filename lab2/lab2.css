@@ -1,0 +1,24 @@
+.row1 {
+  background-color: #028f8f;
+  color: #000000;
+  border: 1px black;
+}
+
+.row2 {
+  background-color: #f5f502;
+  color: #000000;
+}
+
+.row1:hover {
+  background-color: #000000;
+  color: #028f8f;
+}
+
+.row2:hover {
+  background-color: #000000;
+  color: #f5f502;
+}
+
+td {
+  width: 200px;
+}

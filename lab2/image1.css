@@ -1,0 +1,20 @@
+.swiss-flag {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+.cross {
+  background-color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.horizontal {
+  transform: translate(30px, 60px);
+}
+
+.vertical {
+  transform: translate(30px, 30px) rotate(0.25turn);
+}

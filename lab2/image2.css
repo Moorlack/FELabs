@@ -1,0 +1,26 @@
+.swiss-flag2 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+}
+
+.cross2 {
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.horizontal2 {
+  width: 90px;
+  height: 30px;
+  top: 60px;
+  left: 30px;
+}
+
+.vertical2 {
+  width: 30px;
+  height: 90px;
+  top: 30px;
+  left: 60px;
+}
