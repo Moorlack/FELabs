@@ -1,0 +1,31 @@
+body {
+  background-color: #393939;
+}
+* {
+  color: white;
+}
+.lviv {
+  width: 50%;
+  height: auto;
+}
+
+.buttons button {
+  background-color: #000000;
+  color: #FFFF00;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.buttons button:disabled {
+  background-color: #555555;
+  color: #AAAAAA;
+  cursor: not-allowed;
+}
