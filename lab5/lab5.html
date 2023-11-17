@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>Форма Заповнення</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form id="dataForm">
+  <h2>Форма для заповнення</h2>
+
+  <div class="form-group">
+    <label for="fullname">ПІБ:</label>
+    <input type="text" id="fullname" name="fullname" pattern="^[А-ЯІЇ][а-яії]+ [А-ЯІЇ]\.[А-ЯІЇ]\.$" required
+    placeholder="Прізвище І.Б.">
+  </div>
+
+  <div class="form-group">
+    <label for="idcard">ID-card:</label>
+    <input type="text" id="idcard" name="idcard" pattern="^ID №\d+$" required placeholder="ID №00000">
+  </div>
+
+  <div class="form-group">
+    <label for="birthdate">Дата народження:</label>
+    <input type="text" id="birthdate" name="birthdate" pattern="^\d{2}\.\d{2}\.\d{4}$" required
+           placeholder="XX.XX.XXXX">
+  </div>
+
+  <div class="form-group">
+    <label for="address">Адреса:</label>
+    <input type="text" id="address" name="address" pattern="^м\. [а-яіїА-ЯІЇ ]+$" required placeholder="м. Місто">
+  </div>
+
+  <div class="form-group">
+    <label for="email">e-mail:</label>
+    <input type="email" id="email" name="email" pattern="^[a-zA-Z\.]+@[a-zA-Z]+\.[a-zA-Z]+$" required
+           placeholder="name@domen.domen">
+  </div>
+
+  <input type="submit" value="Підтвердити">
+</form>
+</body>
+</html>
+
+
