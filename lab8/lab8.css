@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@font-face {
+  font-family: 'Colby Narrow';
+  src: local('Colby Narrow'), url('./fonts/Colby-NrBld.woff2') format('woff2'),
+  url('./fonts/Colby-NrBld.woff') format('woff');
+}
+
+/* FOR ALL */
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.stylebutton {
+  --size: 1;
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  border-radius: calc(var(--size)*2rem);
+  padding: 1.3rem calc(var(--size) * 3rem);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem
+}
+
+.stylebutton:hover {
+  background-color: #d81b60;
+}
+/* FOR ALL */
+
+/* HEADER */
+.header {
+  background-color: #0077cc;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon-link img {
+  height: 1.5rem;
+}
+
+.contact-info {
+  display: flex;
+  color: white;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info img {
+  height: 1.5rem;
+}
+
+.contact-info .address,
+.contact-info .phone-number {
+  margin: 0;
+}
+/* HEADER */
+
+/* NAVIGATION */
+.navbar {
+  background-color: #f0f9ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 4rem;
+}
+
+.logo-text {
+  font-family: 'Colby Narrow', sans-serif;
+  font-size: 2rem;
+  color: #ec407a;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+/* NAVIGATION */
+
+/* HERO */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  background-color: #f0f9ff;
+  color: #033c5a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hero-content h1{
+  font-size: 5.5rem;
+  margin-bottom: 0;
+  font-family: 'Colby Narrow', sans-serif;
+}
+
+.hero-hail{
+  margin-bottom: 3rem;
+}
+
+.promo-block {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);;
+}
+
+.promo-image {
+  border-radius: 0.5rem;
+  height: 180px;
+}
+
+.promo-text {
+  font-weight: bolder;
+}
+
+.dog-image {
+  width: 33%;
+}
+/* HERO */
+
+.wave-shape {
+  position: absolute;
+  bottom: -0.05%;
+  width: 100%;
+  height: 40%;
+  left: 0;
+}
+/* HERO */
+
+/* SERVICES */
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffffff, #f0f9ff);
+  color: #033c5a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.services-section h1 {
+  font-size: 4rem;
+  font-family: 'Colby Narrow', sans-serif;
+}
+
+.services-section h3 {
+  font-size: 2rem;
+  font-family: 'Colby Narrow', sans-serif;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 2.5rem;
+  margin-bottom: 15rem;
+}
+
+.scroll-arrow {
+  cursor: pointer;
+}
+
+.service {
+  position: relative;
+}
+
+.service img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.service-text {
+  position: absolute;
+  bottom: -5rem;
+  width: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: white;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);;
+  border-radius: 1rem;
+}
+
+.video-section {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10rem;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+}
+
+.video {
+  display: flex;
+  width: 100%;
+  background-image: url('./images/woman-dog.png');
+  aspect-ratio: 1/1;
+  background-size: contain;
+  border-radius: 1rem;
+  align-items: end;
+}
+
+.video-play-button{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+.video-play-button img{
+  width: 90%;
+}
+
+.video-play-button p{
+  color: white;
+  font-family: 'Colby Narrow', sans-serif;
+}
+
+.video-content {
+  margin-left: 12rem;
+}
+
+.video-content p {
+  margin-bottom: 3rem;
+}
+/* SERVICES */
+
+/* EMERGENCY */
+.emergency-section{
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+  background-image: url('./images/happy-dog.jpeg');
+  aspect-ratio: 1920/850;
+  background-size: cover;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+.emergency-section h3 {
+  font-size: 3rem;
+  font-family: 'Colby Narrow', sans-serif;
+  color: #033c5a;
+}
+.emergency-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  width: 30%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.emergency-text img{
+  width: 15%
+}
+.emergency-text p{
+  margin-bottom: 3rem;
+}
+/* EMERGENCY */
+
+/* COMMENT */
+.comment-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  width: 100%;
+  background-image: url('./images/drawed-dog.png');
+  aspect-ratio: 1920/850;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.comments{
+  display: flex;
+  align-items: center;
+}
+.comment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.comment img {
+  width: 10%;
+}
+.comment h1 {
+  text-align: center;
+  font-family: 'Colby Narrow', sans-serif;
+  color: #033c5a;
+}
+.comment h2 {
+  color: #0077cc;
+  margin: 0;
+}
+.comment p{
+  margin: 0;
+  color:grey;
+}
+/* COMMENT */
+
+/* DONATE */
+.donate-section {
+  background-image: url('./images/blue-paws.png');
+  color: white;
+  text-align: center;
+}
+.donate-section h1{
+  font-family: 'Colby Narrow', sans-serif;
+  font-size: 5rem;
+}
+.button-transparent{
+  background-color: transparent;
+  border: 1px solid white;
+}
+.button-transparent:hover{
+  background-color: #033c5a;
+}
+/* DONATE */
+
+@media (max-width: 1080px) {
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .social-media-icons {
+    padding-bottom: 1rem;
+  }
+  /* HEADER */
+
+  /* NAVIGATION */
+  .navbar {
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* NAVIGATION */
+
+  /* HERO */
+  .hero-section {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: end;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .promo-block {
+    width: 100%;
+  }
+  .dog-image{
+    padding-top: 2rem;
+  }
+  .wave-shape{
+    height: 8%;
+  }
+  /* HERO */
+
+  /* SERVICES */
+  .services-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .services-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .services-section h3 {
+    font-size: 0.9rem;
+  }
+
+  .services {
+    flex-direction: column;
+    margin-bottom: 8rem;
+  }
+
+  .scroll-arrow {
+    transform: rotate(90deg);
+  }
+
+  .service {
+    margin-bottom: 2rem;
+  }
+
+  .service img {
+    width: 100%;
+  }
+
+  .service-text {
+    bottom: -3rem;
+    width: 60%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .video-section {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .video-play-button{
+    padding-right: 5%;
+  }
+
+  .video-play-button img{
+    width: 70%;
+  }
+
+  .video-content {
+    margin-left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  /* SERVICES */
+
+  /* EMERGENCY */
+  .emergency-section{
+    aspect-ratio: 1;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .emergency-section h3 {
+    font-size: 1.3rem;
+  }
+  .emergency-section p{
+    margin-bottom: 1rem;
+  }
+  .emergency-text{
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    padding: 1rem;
+  }
+  /* EMERGENCY */
+
+  /* COMMENT */
+  .comment-section{
+    background-image: url('./images/drawed-dog2.png');
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    text-shadow:
+      -1px -1px 0 white,
+      1px -1px 0 white,
+      -1px  1px 0 white,
+      1px  1px 0 white;
+  }
+  .comments{
+    flex-direction: column;
+  }
+  .comment img {
+    width: 30%;
+  }
+  .comment h1 {
+    font-size: 0.9rem;
+  }
+  /* COMMENT */
+
+  /* DONATE */
+  .donate-section {
+    aspect-ratio: 1;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+  }
+  .donate-section h1{
+    font-family: 'Colby Narrow', sans-serif;
+    font-size: 2rem;
+  }
+  .button-transparent{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 0.5rem;
+  }
+  .button-transparent:hover{
+    background-color: #033c5a;
+  }
+  /* DONATE */
+}
