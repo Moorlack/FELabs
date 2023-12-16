@@ -567,6 +567,7 @@ body {
     padding-right: 1rem;
     padding-left: 1rem;
     font-size: 0.7rem;
+    text-shadow: initial;
   }
   .donate-section h1{
     font-family: 'Colby Narrow', sans-serif;
