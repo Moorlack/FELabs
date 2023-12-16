@@ -162,7 +162,7 @@ body {
 .dog-image {
   position: absolute;
   right: 0;
-  bottom:0;
+  bottom: 1px;
   aspect-ratio: auto;
   width: 33%;
 }
